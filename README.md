@@ -1,70 +1,192 @@
-# Getting Started with Create React App
+# 🏛️ Sistema de Gestión de Iglesia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación web moderna y responsive para la gestión integral de actividades eclesiásticas, desarrollada con React y Tailwind CSS.
 
-## Available Scripts
+## 📋 Descripción
 
-In the project directory, you can run:
+Este sistema permite a las iglesias gestionar de manera eficiente sus eventos, voluntarios, anuncios y peticiones de oración en una interfaz intuitiva y fácil de usar. Diseñado pensando en las necesidades reales de las comunidades religiosas, ofrece una solución completa para la organización y coordinación de actividades.
 
-### `npm start`
+## ✨ Características Principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📊 Dashboard Interactivo
+- Vista general de estadísticas en tiempo real
+- Resumen de eventos próximos
+- Anuncios recientes
+- Contador de voluntarios activos y peticiones de oración
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📅 Gestión de Eventos
+- Crear y administrar eventos con fecha, hora y descripción
+- Subir imágenes para cada evento
+- Asignación dinámica de voluntarios
+- Control de cupos necesarios vs. asignados
+- Visualización en modal de imágenes
 
-### `npm test`
+### 👥 Administración de Voluntarios
+- Registro completo de voluntarios con datos de contacto
+- Asignación por ministerios (Alabanza, Ujieres, Niños, Medios etc.)
+- Sistema de inscripción a eventos
+- Gestión de disponibilidad
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📢 Sistema de Anuncios
+- Publicación de anuncios con diferentes niveles de prioridad
+- Soporte para imágenes
+- Clasificación por importancia (Alta, Media, Baja)
+- Fecha automática de publicación
 
-### `npm run build`
+### 🙏 Lista de Oración
+- Registro de peticiones de oración
+- Identificación del solicitante
+- Seguimiento por fecha
+- Interfaz dedicada para la gestión
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📱 Diseño Responsive
+- Adaptación perfecta a dispositivos móviles
+- Menú hamburguesa para pantallas pequeñas
+- Interfaz optimizada para tablets y escritorio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologías Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React** (v18+) - Framework de JavaScript para construir la interfaz
+- **Tailwind CSS** - Framework de CSS para estilos responsive
+- **Lucide React** - Biblioteca de iconos modernos
+- **React Hooks** - Para manejo de estado y efectos
+- **FileReader API** - Para carga y preview de imágenes
 
-### `npm run eject`
+## 📦 Requisitos Previos
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Antes de comenzar, asegúrate de tener instalado:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (v14.0.0 o superior)
+- npm (v6.0.0 o superior) o yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Instalación
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clona el repositorio:
+```bash
+git clone https://github.com/tu-usuario/iglesia-app.git
+cd iglesia-app
+```
 
-## Learn More
+2. Instala las dependencias:
+```bash
+npm install
+# o
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Instala las dependencias específicas del proyecto:
+```bash
+npm install lucide-react
+# o
+yarn add lucide-react
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Inicia la aplicación en modo desarrollo:
+```bash
+npm start
+# o
+yarn start
+```
 
-### Code Splitting
+5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💻 Uso
 
-### Analyzing the Bundle Size
+### Navegación Principal
+- **Dashboard**: Vista general de toda la actividad
+- **Calendario**: Gestión completa de eventos
+- **Voluntarios**: Administración de personal voluntario
+- **Anuncios**: Publicación y gestión de comunicados
+- **Oración**: Lista de peticiones de la comunidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Funcionalidades Clave
 
-### Making a Progressive Web App
+#### Crear un Evento
+1. Ve a la sección "Calendario"
+2. Completa el formulario en el panel derecho
+3. Opcionalmente, agrega una imagen
+4. Haz clic en "Agregar Evento"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Asignar Voluntarios
+1. En la vista de eventos, localiza el evento deseado
+2. En la sección "Asignar Voluntario", selecciona de la lista disponible
+3. El sistema validará automáticamente los cupos
 
-### Advanced Configuration
+#### Publicar un Anuncio
+1. Navega a "Anuncios"
+2. Completa título, contenido y prioridad
+3. Agrega una imagen si lo deseas
+4. Publica con el botón "Publicar Anuncio"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📁 Estructura del Proyecto
 
-### Deployment
+```
+iglesia-app/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── App.js          # Componente principal con toda la lógica
+│   ├── App.css         # Estilos globales
+│   ├── index.js        # Punto de entrada
+│   └── ...
+├── package.json
+├── README.md
+└── .gitignore
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 🤝 Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Las contribuciones son bienvenidas y apreciadas. Para contribuir:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+### Guías de Contribución
+- Mantén el código limpio y comentado
+- Sigue las convenciones de nomenclatura existentes
+- Asegúrate de que tu código sea responsive
+- Prueba en diferentes navegadores antes de enviar
+
+## 🐛 Reporte de Bugs
+
+Si encuentras un bug, por favor abre un issue incluyendo:
+- Descripción clara del problema
+- Pasos para reproducirlo
+- Comportamiento esperado vs. actual
+- Capturas de pantalla si aplica
+- Información del navegador y dispositivo
+
+## 📄 Licencia
+
+No definida aún.
+
+## 👥 Autor
+
+**Eric Castro**
+- GitHub: [@ericmaster77](https://github.com/ericmaster77)
+
+## 🙏 Agradecimientos
+
+- A la comunidad de React por la excelente documentación
+- Lucide por los hermosos iconos
+- Tailwind CSS por facilitar el diseño responsive
+- A todos los contribuidores que ayudan a mejorar este proyecto
+
+---
+
+⭐ Si este proyecto te ha sido útil, considera darle una estrella en GitHub!
+
+## 📞 Soporte
+
+Para soporte y preguntas:
+- 📧 Email: eric.castro.leal@gmail.com
+- 💬 Issues: [GitHub Issues](https://github.com/ericmaster77/Iglesia-app/issues)
+
+---
+
+Hecho con ❤️ para la comunidad
